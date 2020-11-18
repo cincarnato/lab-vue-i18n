@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>{{$t('title')}}</h1>
+    <combobox-language></combobox-language>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+
+import ComboboxLanguage from "@/components/ComboboxLanguage";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ComboboxLanguage
   }
 }
 </script>
